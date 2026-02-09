@@ -1,0 +1,84 @@
+* {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(#ffe6f2, #ffd6e8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.app {
+  width: 100%;
+  max-width: 420px;
+  height: 100vh;
+  text-align: center;
+  padding: 30px 20px;
+  position: relative;
+}
+
+h1 {
+  color: #d6336c;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+/* Flower grow */
+.flower-box {
+  height: 200px;
+  margin: 20px auto;
+}
+
+.flower {
+  width: 180px;
+  transform: scale(0);
+  animation: grow 3s forwards ease-in-out;
+}
+
+@keyframes grow {
+  to { transform: scale(1); }
+}
+
+.btn-area {
+  position: relative;
+  height: 150px;
+  margin-top: 20px;
+}
+
+button {
+  padding: 18px 28px;
+  font-size: 20px;
+  border: none;
+  border-radius: 12px;
+  color: white;
+  position: absolute;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+#yesBtn {
+  background: #ff4d88;
+  left: 20%;
+  bottom: 10px;
+}
+
+#noBtn {
+  background: #888;
+  right: 20%;
+  bottom: 10px;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+#response img {
+  width: 220px;
+  margin-top: 20px;
+}
