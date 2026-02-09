@@ -13,7 +13,7 @@ document.addEventListener("click", () => {
 yesBtn.addEventListener("click", () => {
   response.innerHTML = `
     <h2>😊 You said YES! 💖</h2>
-    <img src="<div class="tenor-gif-embed" data-postid="11951420229067864601" data-share-method="host" data-aspect-ratio="0.913655" data-width="100%"><a href="https://tenor.com/view/cute-gif-11951420229067864601">Cute Sticker</a>from <a href="https://tenor.com/search/cute-stickers">Cute Stickers</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>">
+    <img src="<div class="https://media.tenor.com/pdv5YIMB-hkAAAAj/cute.gif">Cute Sticker</a>from <a href="https://tenor.com/search/cute-stickers">Cute Stickers</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>">
     <p>You just made my day 🌸</p>
   `;
   confetti({
@@ -39,4 +39,5 @@ function moveNoButton() {
 
   noBtn.style.left = ${randomX}px;
   noBtn.style.top = ${randomY}px;
+
 }
