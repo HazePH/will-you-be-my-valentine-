@@ -8,30 +8,29 @@
 </head>
 <body>
 
-<audio id="bgMusic" src="https://open.spotify.com/track/3iBgrkexCzVuPy4O9vx7Mf?si=12f1f67ae4ca459c" loop></audio>
+<audio id="bgMusic" src="glue.mp3" loop></audio>
 
 <div class="app">
   <h1>🌹 Will you be my Valentine?</h1>
 
-<div class="flower-box">
-  <div class="stem"></div>
-  <div class="petal p1"></div>
-  <div class="petal p2"></div>
-  <div class="petal p3"></div>
-  <div class="petal p4"></div>
-  <div class="center"></div>
-</div>
+  <!-- Flower GIF -->
+  <div class="flower-box">
+    <img class="flower-gif"
+      src="https://media.giphy.com/media/WNx0qfuKLn9v7LJhYI/giphy.gif"
+      alt="Growing flower">
+  </div>
 
+  <!-- Buttons -->
   <div class="btn-area" id="btnArea">
     <button id="yesBtn">YES ❤️</button>
     <button id="noBtn">NO 💔</button>
   </div>
 
+  <!-- Response -->
   <div id="response"></div>
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 <script src="script.js"></script>
 </body>
-
 </html>
