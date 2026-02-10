@@ -13,7 +13,7 @@ document.addEventListener("click", () => {
 yesBtn.addEventListener("click", () => {
   response.innerHTML = `
     <h2>😊 You said YES! 💖</h2>
-    <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZjE2czJidXhqcTN3ZWNqaWhuczdoZXcyZGFnZGQ4ajRlbTd2YnQ0NSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/iWgIt7lFCsKuVOhq8z/giphy.gif">
+    <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExbXkxNjg5MmI3c2ttbWF0YjZqajV1cXI5M3k4bXJxb3IxeWc4eGZsNSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/iWgIt7lFCsKuVOhq8z/giphy.gif">
     <p>You just made my day 🌸</p>
   `;
   confetti({
@@ -40,4 +40,5 @@ function moveNoButton() {
   noBtn.style.left = `${randomX}px`;
   noBtn.style.top = `${randomY}px`;
 }
+
 
