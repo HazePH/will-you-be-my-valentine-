@@ -4,16 +4,16 @@ const response = document.getElementById("response");
 const music = document.getElementById("bgMusic");
 const btnArea = document.getElementById("btnArea");
 
-// autoplay music after first tap
+// autoplay music after first tap (mobile rule)
 document.addEventListener("click", () => {
   music.play().catch(()=>{});
 }, { once: true });
 
-// YES click
+// YES
 yesBtn.addEventListener("click", () => {
   response.innerHTML = `
     <h2>😊 You said YES! 💖</h2>
-    <img src="<div class="https://media.tenor.com/pdv5YIMB-hkAAAAj/cute.gif">
+    <img src="https://media.giphy.com/media/3oriO0OEd9QIDdllqo/giphy.gif">
     <p>You just made my day 🌸</p>
   `;
   confetti({
@@ -23,7 +23,7 @@ yesBtn.addEventListener("click", () => {
   });
 });
 
-// NO button runs away on touch
+// NO runs away
 noBtn.addEventListener("touchstart", moveNoButton);
 noBtn.addEventListener("mouseover", moveNoButton);
 
@@ -37,8 +37,6 @@ function moveNoButton() {
   const randomX = Math.random() * maxX;
   const randomY = Math.random() * maxY;
 
-  noBtn.style.left = ${randomX}px;
-  noBtn.style.top = ${randomY}px;
-
+  noBtn.style.left = `${randomX}px`;
+  noBtn.style.top = `${randomY}px`;
 }
-
